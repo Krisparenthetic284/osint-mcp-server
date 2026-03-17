@@ -50,7 +50,8 @@
   <a href="#tools-reference-37-tools">Tools (37)</a> &bull;
   <a href="#data-sources-12">Data Sources</a> &bull;
   <a href="#architecture">Architecture</a> &bull;
-  <a href="CHANGELOG.md">Changelog</a>
+  <a href="CHANGELOG.md">Changelog</a> &bull;
+  <a href="CONTRIBUTING.md">Contributing</a>
 </p>
 
 <p align="center">
