@@ -1,13 +1,14 @@
 {
   "name": "osint-mcp-server",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "OSINT intelligence MCP server — Shodan, VirusTotal, SecurityTrails, Censys, DNS, WHOIS, crt.sh, Wayback, BGP",
   "type": "module",
   "bin": {
     "osint-mcp-server": "dist/index.js"
   },
   "files": [
-    "dist/"
+    "dist/",
+    "action.yml"
   ],
   "scripts": {
     "dev": "bun --watch run src/index.ts",

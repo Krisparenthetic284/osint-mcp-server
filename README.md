@@ -486,6 +486,69 @@ Agent: → wayback_urls {domain: "target.com", limit: 500}
 
 ---
 
+## GitHub Actions
+
+Use any of the 37 tools directly in your CI/CD pipeline:
+
+```yaml
+# .github/workflows/security.yml
+name: OSINT Security Check
+on:
+  schedule:
+    - cron: '0 8 * * 1'  # Weekly Monday 8am
+  workflow_dispatch:
+
+jobs:
+  recon:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Domain reconnaissance
+        uses: badchars/osint-mcp-server@v1
+        id: recon
+        with:
+          tool: osint_domain_recon
+          args: '{"domain": "example.com"}'
+
+      - name: Email security audit
+        uses: badchars/osint-mcp-server@v1
+        with:
+          tool: dns_email_security
+          args: '{"domain": "example.com"}'
+
+      - name: Subdomain enumeration
+        uses: badchars/osint-mcp-server@v1
+        with:
+          tool: crtsh_search
+          args: '{"domain": "example.com"}'
+
+      - name: Shodan scan (optional)
+        uses: badchars/osint-mcp-server@v1
+        with:
+          tool: shodan_host
+          args: '{"ip": "203.0.113.50"}'
+        env:
+          SHODAN_API_KEY: ${{ secrets.SHODAN_API_KEY }}
+```
+
+The action output is available via `steps.<id>.outputs.result` for further processing.
+
+### CLI Usage
+
+```bash
+# List all available tools
+npx osint-mcp-server --list
+
+# Run any tool directly
+npx osint-mcp-server --tool dns_lookup '{"domain":"example.com","type":"A"}'
+npx osint-mcp-server --tool osint_domain_recon '{"domain":"example.com"}'
+npx osint-mcp-server --tool dns_email_security '{"domain":"example.com"}' --format text
+
+# Tools requiring API keys
+SHODAN_API_KEY=your-key npx osint-mcp-server --tool shodan_host '{"ip":"1.1.1.1"}'
+```
+
+---
+
 ## Data Sources (12)
 
 | Source | Auth | Rate Limit | What it provides |
